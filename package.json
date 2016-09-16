@@ -1,5 +1,5 @@
 {
-  "name": "electron-quick-start",
+  "name": "dmp_server_electron",
   "version": "1.0.0",
   "description": "Electron app for DMP's warehouse",
   "main": "main.js",
@@ -17,6 +17,12 @@
     "electron": "^1.3.4"
   },
   "dependencies": {
-    "express": "^4.14.0"
+    "csv-parser": "^1.11.0",
+    "express": "^4.14.0",
+    "ip": "^1.1.3",
+    "line-reader": "^0.4.0",
+    "moment": "^2.15.0",
+    "socket.io": "^1.4.8",
+    "string": "^3.3.1"
   }
 }

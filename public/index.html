@@ -1,19 +1,35 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+ 	<meta charset="UTF-8">
+  	<title>DMP Server</title>
+  	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <h1><img src="static/img/pulsar@2x.png"></h1>
+        <hr style="margin-bottom: 20px;">
+        <a href="#" style="float: left;" id="log">Login</a>
+        <a href="#" style="float: right;" id="logout">Logout</a>
+        <br/><br/><br/>
 
-  <script>
-    // You can also require other files to run in this process
-    require('./renderer.js')
-  </script>
+        <label for="product"><b>Prodotto:</b></label><br/>
+        <input type="text" name="product" id="product">
+        <input type="text" name="desc" id="desc" disabled><br/><br/>
+        <label for="quantity"><b>Quantità:</b></label><br/>
+        <input type="text" name="quantity" id="quantity"><br/><br/>
+        <input type="submit" value="Send" id="send">
+    </div>
+        
+    <div id="login_div">
+        <a href="#" style="float: right" id="close">x</a>
+        <h2>Inserisci COD. Operatore</h2>
+        <input type="text" name="opCode" id="opCode" class="pop">
+        <input type="submit" value="Login" id="login" class="pop">
+    </div>
+
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  	<script src="js/main.js"></script>
+</body>
 </html>
