@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+ 	<meta charset="UTF-8">
+  	<title>DMP Server</title>
+  	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<h1><img src="static/img/pulsar@2x.png"></h1>
+    <hr style="margin-bottom: 30px;">
+
+	<table id="req_table">
+	  <tr>
+        <th>ID</th>
+        <th>Ubicazione</th>
+	    <th>Codice</th>
+        <th>Descrizione</th>
+        <th>Quantità</th>
+	    <th>Utente</th>
+	    <th>Data</th>
+        <th>Eseguito</th>
+	  </tr>
+	</table>
+
+  <!-- Insert this line above script imports  -->
+  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+	  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  	<script src="js/req.js"></script>
+
+  <!-- Insert this line after script imports -->
+  <script>if (window.module) module = window.module;</script>
+</body>
+</html>

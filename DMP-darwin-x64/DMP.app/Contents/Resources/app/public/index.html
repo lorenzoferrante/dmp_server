@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+ 	<meta charset="UTF-8">
+  	<title>DMP Server</title>
+  	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <h1><img src="static/img/pulsar@2x.png"></h1>
+        <a href="tab.html" id="go_tab">Richieste</a>
+	<hr style="margin-bottom: 20px;">
+        <a href="#" style="float: left;" id="log">Login</a>
+        <a href="#" style="float: right;" id="logout">Logout</a>
+        <br/><br/><br/>
+
+        <label for="product"><b>Prodotto:</b></label><br/>
+        <input type="text" name="product" id="product">
+        <input type="text" name="desc" id="desc" disabled><br/><br/>
+        <label for="quantity"><b>Quantità:</b></label><br/>
+        <input type="text" name="quantity" id="quantity"><br/><br/>
+        <input type="submit" value="Send" id="send">
+    </div>
+        
+    <div id="login_div">
+        <a href="#" style="float: right" id="close">x</a>
+        <h2>Inserisci COD. Operatore</h2>
+        <input type="text" name="opCode" id="opCode" class="pop">
+        <input type="submit" value="Login" id="login" class="pop">
+    </div>
+
+    <!-- Insert this line above script imports  -->
+	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+	<script src="js/jquery.js"></script>
+  	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  	<script src="js/main.js"></script>
+
+  	<!-- Insert this line after script imports -->
+	<script>if (window.module) module = window.module;</script>
+</body>
+</html>
