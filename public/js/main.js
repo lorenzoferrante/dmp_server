@@ -1,4 +1,4 @@
-$(function() {
+(function($) {    
     const op_codes = [
         ['1001', 'Linea 1', 'Topolino'],
         ['1002', 'Linea 2', 'Pippo'],
@@ -114,4 +114,4 @@ $(function() {
         $('#desc').val('')
 	})
 
-})
+})(jQuery)

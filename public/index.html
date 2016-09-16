@@ -28,8 +28,14 @@
         <input type="submit" value="Login" id="login" class="pop">
     </div>
 
-	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- Insert this line above script imports  -->
+	<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+	<script src="js/jquery.js"></script>
   	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
   	<script src="js/main.js"></script>
+
+  	<!-- Insert this line after script imports -->
+	<script>if (window.module) module = window.module;</script>
 </body>
 </html>
